@@ -12,7 +12,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Este portafolio es un ejemplo de cómo un template puede ser transformado para adaptarse a las necesidades particulares de un profesional, logrando una página funcional, visualmente atractiva y alineada con los objetivos personales o profesionales del usuario.',
 		links: [{ to: 'https://github.com/juan-dev-bucket/portafolio-juan', label: 'GitHub' },
-			{ to: 'https://juanmoreno.site', label: 'Website' }
+			{ to: 'https://juanfernando.site', label: 'Website' }
 		],
 		logo: Assets.JavaScript,
 		name: 'Portafolio Juan Moreno',
