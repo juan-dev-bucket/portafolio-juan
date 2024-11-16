@@ -1,122 +1,174 @@
-# Slick Portfolio With Svelte.
+<a name="readme-top"></a>
 
-Vercel-like style portfolio template for developers.
+<div align="center">
 
-[For a reference, check out my personal protfolio, slightly changed, but uses this template.](https://riadhadrani.github.io/RiadhAdrani)
+ [![Contributors][contributors-shield]][contributors-url]
+ [![Forks][forks-shield]][forks-url]
+ [![Stargazers][stars-shield]][stars-url]
+ [![Issues][issues-shield]][issues-url]
+ [![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Create
-
-You can either clone or fork this repository :
-
-### `fork`
-
-You can fork the project, maintaining a link to the original repo using the `fork` button, make sure the check the `Copy the master branch only` checkbox.
-
-![alt text](./screenshots/image.png)
-
-### `clone`
-
-- using `git` :
-
-```bash
-# ssh
-git clone git@github.com:RiadhAdrani/slick-portfolio-svelte.git protfolio
-
-# https
-git clone https://github.com/RiadhAdrani/slick-portfolio-svelte.git protfolio
-```
-
-- using `degit` npm executable :
-
-```bash
-npx degit RiadhAdrani/slick-portfolio-svelte portfolio
-```
-
-if you don't have `degit`, it will prompt you to accept, enter `y`.
-
-> You can add the main repo as another remote repo to maintain updates in the future.
->
-> ```bash
-> # ssh
-> git remote add main git@github.com:RiadhAdrani/slick-portfolio-svelte.git
-> ```
-
-## Deploy to GitHub pages
-
-Before deploying to `GitHub Pages`:
-
-### Enable workflows for `Forks`
-
-If you forked the repo, go to the `Actions` tab in the newly generated repository, and enable workflows, click on the green button `I understand my workflows, go ahead and enable them` :
-
-![alt text](./screenshots/enable-fork-workflow.png)
-
-### Actions Settings
-
-Allow `GitHub Pages` in your repo settings with correct permissions:
-  - go to your repo `Settings` > `Actions` > `General`
-  - in `Actions permissions` : make sure that `Allow all actions and reusable workflows` checkbox is checked
-
-![alt text](./screenshots/settings-actions.png)
-
-### svelte.config.js
-
-Depending on the name of your repository, you would like to set the `base` variable to that, starting with a leading slash like this:
-
-```js
-const base = '/slick-portfolio-svelte';
-```
-
-But if your repository name is the same as your Github domain name; my Github name is `RiadhAdrani` so my domain name is `riadhadrani.github.io` (lower cased), and so the special repository name is also `riadhadrani.github.io`: if that is the case, you need to set the base to an empty string
-
-```js
-const base = '';
-
-```
-
-### Launching the build and deploy workflow
-
-If you didn't commit and push the changes in the `svelte.config.js` yet, you can do that now, otherwise you can create an empty commit:
-
-```bash
-git commit --allow-empty -m "chore: trigger workflow"
-```
-
-and push it to your `master` or `main` branch.
-
-In the `Actions` tab, make sure that the `Build and Deploy` workflow is successful (wait for it to complete): you should have at least one successfull workflow run:
-
-![alt text](./screenshots/build-and-deploy-action.png)
-
-### Enable GitHub pages
+</div>
 
 
-- go to your repo's `Settings` > `Pages`
-- in Source section, select `Deploy from a branch`.
-- in Branch section, select `gh-pages` and `/ (root)` and click on save
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/jumo04/master-javascript">
+    <img src="./README/images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-![alt text](./screenshots/enable-gh-pages.png)
+<h3 align="center">Portafolio Personal</h3>
 
-Again in the `Actions` tab, make sure that the `pages-build-deployment` workflow is successful (wait for it to complete): you should have at least one successfull workflow run:
+  <p align="center"> 
+    Este reposito contiene toda la informacion impartida en el curso de master en javascript, con las versiones que se tienen en el curso, el curso trata de tocar los temas de servidor como del cliente creando un stack full donde se crea el backend desde 0 y se crea el frontend usando frameworks como angular y bootstrap  y librerias como react.js y jquery
+    <br />
+    <a href="https://github.com/juan-dev-bucket/portafolio-juan"><strong>Explora los docs»</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jumo04/master-javascript">Demo</a>
+    ·
+    <a href="https://github.com/jumo04/master-javascript/issues/new?labels=bug&template=bug-report---.md">Reporta un bug</a>
+    
+  </p>
+</div>
 
-![alt text](./screenshots/pages-build-deployment-action.png)
 
-> If for some reason no action was launched, try pushing empty commit.
 
-## That's it
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Tabla de contenido</summary>
+  <ol>
+    <li>
+      <a href="#acerca-del-repositorio">Acerca del Repositorio</a>
+      <ul>
+        <li><a href="#hecho-con">Hecho Con:</a></li>
+      </ul>
+    </li>
+    <li>
+     <a href="#prerequisitos">Prerequisitos</a>
+    </li>
+    <li><a href="#uso">Uso</a></li>
+    <li><a href="#curso">Curso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ol>
+</details>
 
-That's it, you can click on the latest deployment and visit it.
 
-## Adapt to your needs
+## Acerca del Repositorio
 
-If you want to use the template as it is, you can :
+Este reposito contiene toda la informacion impartida en el curso de master en javascript, con las versiones que se tienen en el curso, el curso trata de tocar los temas de servidor como del cliente creando un stack full donde se crea el backend desde 0 y se crea el frontend usando frameworks como angular y bootstrap y librerias como react.js y jquery
 
-- update files in `src/lib/data` with your data.
-- update `src/lib/index.scss` for custom styling.
-- update `static/favicon.ico` to customize the tab's icon.
+### Hecho Con
 
-But feel free to explore and hack the template to your needs if you feel like it.
+<div align="center">
 
-## Known issues:
+ [![Javascript][Javascript]][Javascript-url]
+ [![Node][Nodejs]][Node-url]
+ [![React][React.js]][React-url]
+ [![Angular][Angular.io]][Angular-url]
+ [![Typescript][Typescript]][Typescript-url]
+ [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+ [![JQuery][JQuery.com]][JQuery-url]
 
-- Svelte no longer support `node 14`, use a newer version instead.
+</div>
+
+
+
+
+## Prerequisitos
+
+Lista de prerequisitos necesarios para correr los scripts.
+* Instalando fnm (Fast Node Manager)
+  ```sh
+  winget install Schniz.fnm
+  ```
+
+* Instalando Nodejs v20
+  ```sh
+  fnm use --install-if-missing 20
+  ```
+
+* Verificando que  node este instalado correctamente
+  ```sh
+  node -v
+  ```
+
+* Verificando que npm este instalado correctamente
+  ```sh
+  npm -v
+  ```
+
+
+
+<p align="right"><a href="#readme-top">Inicio</a></p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Uso
+
+1. Clone el repositorio
+   ```sh
+   git clone https://github.com/jumo04/master-javascript.git
+   ```
+2. Ingrese en cualquier carpeta
+   ```sh
+   cd ./folder_name/
+   ```
+3. Ejecuta el comando para correr el script usando cualquier script que este en la carpeta
+   ```sh
+   node ./script_name.js
+   ```
+<p align="right"><a href="#readme-top">Inicio</a></p>
+
+## Curso
+
+
+* [Máster en JavaScript: ECMAScript, Angular 9+, React, NodeJS](https://www.udemy.com/course/aprende-a-programar-con-javascript-desde-cero/)
+
+<!-- CONTACT -->
+## Contacto
+
+Juan Fernando Moreno - [@janfer](https://twitter.com/janfer) - juanfernandomoreno04@gmail.com
+
+Project Link: [https://github.com/jumo04/master-javascript](https://github.com/jumo04/master-javascript)
+
+<p align="right">(<a href="#readme-top">Inicio</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jumo04/master-javascript.svg?style=for-the-badge
+[contributors-url]: https://github.com/jumo04/master-javascript/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jumo04/master-javascript.svg?style=for-the-badge
+[forks-url]: https://github.com/jumo04/master-javascript/network/members
+[stars-shield]: https://img.shields.io/github/stars/jumo04/master-javascript.svg?style=for-the-badge
+[stars-url]: https://github.com/jumo04/master-javascript/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jumo04/master-javascript.svg?style=for-the-badge
+[issues-url]: https://github.com/jumo04/master-javascript/issues
+[license-shield]: https://img.shields.io/github/license/jumo04/master-javascript.svg?style=for-the-badge
+[license-url]: https://github.com/jumo04/master-javascript/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/juan-fernando-moreno
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Nodejs]: https://img.shields.io/badge/nodejs-green?style=for-the-badge&logo=nodedotjs
+[Next-url]: https://nextjs.org/
+[Node-url]: https://nodejs.org/
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Typescript]: https://img.shields.io/badge/Typescript-grey?style=for-the-badge&logo=typescript
+[Typescript-url]: https://lenguajejs.com/javascript/
+[Javascript]: https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript
+[Javascript-url]: https://lenguajejs.com/javascript/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
