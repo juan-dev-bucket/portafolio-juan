@@ -24,16 +24,16 @@ RUN apt-get update -qq && \
 
 # Install node modules
 COPY .npmrc package-lock.json package.json yarn.lock ./
-RUN npm install --frozen-lockfile --production=false
+RUN yarn install --frozen-lockfile --production=false
 
 # Copy application code
 COPY . .
 
 # Build application
-RUN npm run build
+RUN yarn run build
 
 # Remove development dependencies
-RUN npm install --production=true
+RUN yarn install --production=true
 
 
 # Final stage for app image
