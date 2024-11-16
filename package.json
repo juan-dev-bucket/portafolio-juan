@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"start": "node build",
-		"build": "vite build --output public",
+		"build": "vite build --output-path public",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
