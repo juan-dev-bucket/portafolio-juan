@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"start": "node build",
-		"build": "vite build --output-path public",
+		"build": "vite build ",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -50,6 +50,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^5.4.7",
 		"dayjs": "^1.11.10"
 	}
 }

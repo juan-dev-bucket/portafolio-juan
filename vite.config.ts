@@ -3,6 +3,9 @@ import type { UserConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 
 const config: UserConfig = {
+      build: {
+        outDir: './public'
+      },
 	plugins: [UnoCSS(), sveltekit()]
 };
 
