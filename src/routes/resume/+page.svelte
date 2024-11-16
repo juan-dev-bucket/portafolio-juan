@@ -5,6 +5,7 @@
 	import CommonPage from '$lib/components/CommonPage.svelte';
 	import { items } from '$lib/data/skills';
 	import { base } from '$app/paths';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 </script>
 
@@ -61,12 +62,13 @@
 	</div>
 	<div class="button-section">
 		<div class="col-twelve">
-			<a href="#" title="Download CV" class="button button-primary">Descargar HV</a>
+			<a href="{base}/CV.pdf" target="_blank" download title="Download CV" class="button button-primary">Descargar HV</a>
 		</div>   		
 	</div>
 </section> 
 
 </CommonPage>
+<GeneralFooter />
 
 <style lang="scss">
 

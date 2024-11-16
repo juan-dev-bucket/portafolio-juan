@@ -9,6 +9,7 @@
 	import type { Service } from '$lib/types';
 	import ServiceCarrousel from "$lib/components/ServiceCarrousel/ServiceCarrousel.svelte";
 	import { title } from '@data/services';
+	import Footer from "$lib/components/Footer.svelte";
 
 	let display: Array<Service> = [];
 
@@ -23,6 +24,7 @@
 	<ServiceCarrousel />
 
 </CommonPage>
+<Footer />
 
 <style lang="scss">
 	.projects-list {

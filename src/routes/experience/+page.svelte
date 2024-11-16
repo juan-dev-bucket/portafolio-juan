@@ -6,6 +6,7 @@
 	import type { Experience } from '$lib/types';
 	import { isBlank } from '@riadh-adrani/utils';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 	let result: Array<Experience> = [...items];
 
@@ -55,3 +56,5 @@
 		{/if}
 	</div>
 </CommonPage>
+
+<GeneralFooter />

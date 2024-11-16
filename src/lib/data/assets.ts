@@ -17,7 +17,7 @@ const Assets = {
 	FastApi: a('fastapi'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
-	Kafka: a('kafka.svg'),
+	Kafka: a('kafka.png'),
 	Neo4j: a('neo4j.svg'),
 	Nginx: a('nginx.svg'),
 	Numpy: a('numpy.svg'),

@@ -9,6 +9,7 @@
 	import { isBlank } from '@riadh-adrani/utils';
 	import { getPlatfromIcon } from '$lib/utils';
 	import Typewriter from 'svelte-typewriter';
+	import Footer from '$lib/components/Footer.svelte';
 
 
 	const isEmail = (email: string): boolean => {
@@ -50,5 +51,6 @@
 	</div>
 	<Carrousel items={skills ?? skillsItems} />
 </div>
+<Footer />
 
 

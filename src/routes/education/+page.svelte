@@ -10,6 +10,7 @@
 	import { computeExactDuration, getTimeDiff } from '$lib/utils';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 	let search = '';
 
@@ -70,4 +71,4 @@
 
 	</CommonPage>
 
-	
+	<GeneralFooter />

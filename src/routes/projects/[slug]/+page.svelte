@@ -14,6 +14,7 @@
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import Screenshot from '$lib/components/Screenshot/Screenshot.svelte';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 	export let data: { project?: Project };
 
@@ -124,6 +125,8 @@
 	{/if}
 </div>
 <Screenshot {screenshot} onClose={() => (screenIndex = undefined)} />
+
+<GeneralFooter />
 
 <style lang="scss">
 	.screenshot {

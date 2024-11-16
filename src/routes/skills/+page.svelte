@@ -7,6 +7,7 @@
 	import Card from '$lib/components/Card/Card.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 	let result = groupByCategory('');
 
@@ -50,3 +51,5 @@
 		</div>
 	{/if}
 </CommonPage>
+
+<GeneralFooter />

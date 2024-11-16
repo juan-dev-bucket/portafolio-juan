@@ -10,6 +10,7 @@
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
+	import GeneralFooter from '$lib/components/GeneralFooter.svelte';
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
@@ -93,6 +94,7 @@
 		</div>
 	{/if}
 </CommonPage>
+
 
 <style lang="scss">
 	.projects-list {

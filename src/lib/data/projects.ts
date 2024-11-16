@@ -11,7 +11,7 @@ export const items: Array<Project> = [
 			'Una buena implementacion y modificacion de un template hecho en svelte	y typescript. Integrandolo con un backend donde se maneja toda los datos de este proyecto.<br> La página web de portafolio presenta una estructura visual moderna y elegante, inicialmente basada en un template predefinido, pero completamente adaptada para reflejar las necesidades específicas del usuario. A través de modificaciones personalizadas en el diseño y la funcionalidad, se ha logrado una experiencia única que resalta las habilidades, proyectos y logros del propietario del portafolio.<br> Este portafolio es un ejemplo de cómo un template puede ser transformado para adaptarse a las necesidades particulares de un profesional, logrando una página funcional, visualmente atractiva y alineada con los objetivos personales o profesionales del usuario.',
 		shortDescription:
 			'Este portafolio es un ejemplo de cómo un template puede ser transformado para adaptarse a las necesidades particulares de un profesional, logrando una página funcional, visualmente atractiva y alineada con los objetivos personales o profesionales del usuario.',
-		links: [{ to: 'https://github.com/jumo04/portfolio-svelte', label: 'GitHub' },
+		links: [{ to: 'https://github.com/juan-dev-bucket/portafolio-juan', label: 'GitHub' },
 			{ to: 'https://juanmoreno.site', label: 'Website' }
 		],
 		logo: Assets.JavaScript,
