@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const base = '/resume-profile';
@@ -14,7 +14,7 @@ const config = {
 		}
 	},
 	kit: {
-		adapter: adapter({ fallback: '404.html', runtime: 'nodejs20.x', }),
+		adapter: adapter({ fallback: '404.html' }),
 		alias: {
 			$lib: './src/lib',
 			'@data': './src/lib/data',
