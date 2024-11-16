@@ -15,7 +15,7 @@ export const items: Array<Project> = [
 			{ to: 'https://juanfernando.site', label: 'Website' }
 		],
 		logo: Assets.JavaScript,
-		name: 'Portafolio Juan Moreno',
+		name: 'Portafolio Juan Fernando Moreno',
 		period: {
 			from: new Date(2024, 10, 10), to: new Date(2024, 10, 16) 
 		},

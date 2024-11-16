@@ -3,12 +3,11 @@
 </script>
 
 <footer>
-    <div class="copyright">&copy; 2024 Juan Fernando Moreno, Lotan Inc, RiadhAdrani/slick-portfolio-svelte All Rights Reserved.
+    <div class="copyright">&copy; 2024 Juan Fernando Moreno, Lotan Inc, All Rights Reserved.
     </div>
 </footer>
 
-<style>
-    footer{
+<style>   footer{
         text-align: center;
         position: absolute;
         left: 0;
