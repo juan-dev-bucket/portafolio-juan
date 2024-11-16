@@ -1,7 +1,7 @@
 # syntax = docker/dockerfile:1
 
 # Adjust NODE_VERSION as desired
-ARG NODE_VERSION=20.18.0
+ARG NODE_VERSION=18.20.4
 FROM node:${NODE_VERSION}-slim as base
 
 LABEL fly_launch_runtime="SvelteKit"
@@ -24,16 +24,16 @@ RUN apt-get update -qq && \
 
 # Install node modules
 COPY .npmrc package-lock.json package.json yarn.lock ./
-RUN yarn install --frozen-lockfile --production=false
+RUN npm install --frozen-lockfile --production=false
 
 # Copy application code
 COPY . .
 
 # Build application
-RUN yarn run build
+RUN npm run build
 
 # Remove development dependencies
-RUN yarn install --production=true
+RUN npm install --production=true
 
 
 # Final stage for app image
@@ -46,4 +46,4 @@ COPY --from=build /app/package.json /app
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
-CMD [ "node", "./build/index.js" ]
+CMD [ "node", "./build/index.html" ]
