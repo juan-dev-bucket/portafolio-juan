@@ -6,7 +6,7 @@
 
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
-	import Typewriter from 'svelte-typewriter';
+	import Typewriter from '$lib/components/Typewriter/Typewriter.svelte';
 
 	$: currentRoute = $page.url.pathname;
 
@@ -25,20 +25,22 @@
 	<nav class="container flex flex-row items-center text-sm">
 		<a
 		href={`${base}/`}
-		class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
+		class="nav-menu-left decoration-none w-auto lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
 		<UIcon icon="i-carbon-code" classes="text-2em" />
 		<Typewriter interval={100}>
-			<span
+				<span
 				class="ml-2 text-md font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
 				>{HOME.name} {HOME.lastName}
 			</span>
-			</Typewriter>
+		</Typewriter>
 		</a>
+		<Typewriter interval={100} cursor={true}>
 			<div class="flex-1 block overflow-hidden md:hidden whitespace-nowrap text-ellipsis text-center">
 				{HOME.name}
 				{HOME.lastName}
 			</div>
+		</Typewriter>
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item (item.title)}
 				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
